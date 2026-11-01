@@ -46,7 +46,10 @@ def main() -> int:
         except ModuleNotFoundError:
             continue
 
-        base = registry.MODULE["base_path"].rstrip("/")
+        spec = getattr(registry, "MODULE", None)
+        if not spec:
+            continue
+        base = spec["base_path"].rstrip("/")
         nav_paths = set()
         for item in registry.NAV_ITEMS:
             to = item["to"]

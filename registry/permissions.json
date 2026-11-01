@@ -188,6 +188,283 @@
         "placement_cell.application.auto_withdraw",
         "placement_cell.offer.expire"
       ]
+    },
+    "vms": {
+      "grants": {
+        "Dean Academic": [
+          "vms.pass.view_self",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.approve_second_level",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view",
+          "vms.visit_request.view_self"
+        ],
+        "admin": [
+          "vms.audit.view",
+          "vms.blacklist.manage",
+          "vms.blacklist.view",
+          "vms.emergency.roll_call",
+          "vms.emergency.trigger",
+          "vms.gate.check_in_out",
+          "vms.gate.manage",
+          "vms.incident.report",
+          "vms.override.gate",
+          "vms.pass.issue",
+          "vms.pass.scan",
+          "vms.pass.view_self",
+          "vms.policy.manage",
+          "vms.report.export",
+          "vms.report.view",
+          "vms.retention.manage",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.approve_second_level",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view",
+          "vms.visit_request.view_self",
+          "vms.walkin.register",
+          "vms.zone.manage",
+          "vms.zone.view"
+        ],
+        "auditor": [
+          "vms.audit.view",
+          "vms.blacklist.view",
+          "vms.report.export",
+          "vms.report.view",
+          "vms.zone.view"
+        ],
+        "dept_approver": [
+          "vms.pass.view_self",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.approve_second_level",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view",
+          "vms.visit_request.view_self"
+        ],
+        "faculty": [
+          "vms.pass.view_self",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view_self"
+        ],
+        "host": [
+          "vms.pass.view_self",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view_self"
+        ],
+        "reception": [
+          "vms.gate.check_in_out",
+          "vms.pass.issue",
+          "vms.visit_request.view",
+          "vms.walkin.register",
+          "vms.zone.view"
+        ],
+        "security_admin": [
+          "vms.audit.view",
+          "vms.blacklist.manage",
+          "vms.blacklist.view",
+          "vms.emergency.roll_call",
+          "vms.emergency.trigger",
+          "vms.gate.manage",
+          "vms.incident.report",
+          "vms.override.gate",
+          "vms.pass.scan",
+          "vms.policy.manage",
+          "vms.report.export",
+          "vms.report.view",
+          "vms.visit_request.approve_second_level",
+          "vms.visit_request.view",
+          "vms.zone.manage",
+          "vms.zone.view"
+        ],
+        "security_guard": [
+          "vms.emergency.roll_call",
+          "vms.gate.check_in_out",
+          "vms.incident.report",
+          "vms.pass.issue",
+          "vms.pass.scan",
+          "vms.zone.view"
+        ],
+        "staff": [
+          "vms.pass.view_self",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view_self"
+        ],
+        "super_admin": [
+          "vms.audit.view",
+          "vms.blacklist.manage",
+          "vms.blacklist.view",
+          "vms.emergency.roll_call",
+          "vms.emergency.trigger",
+          "vms.gate.check_in_out",
+          "vms.gate.manage",
+          "vms.incident.report",
+          "vms.override.gate",
+          "vms.pass.issue",
+          "vms.pass.scan",
+          "vms.pass.view_self",
+          "vms.policy.manage",
+          "vms.report.export",
+          "vms.report.view",
+          "vms.retention.manage",
+          "vms.visit_request.approve_host",
+          "vms.visit_request.approve_second_level",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.extend",
+          "vms.visit_request.view",
+          "vms.visit_request.view_self",
+          "vms.walkin.register",
+          "vms.zone.manage",
+          "vms.zone.view"
+        ],
+        "visitor": [
+          "vms.pass.view_self",
+          "vms.visit_request.cancel",
+          "vms.visit_request.create",
+          "vms.visit_request.view_self"
+        ]
+      },
+      "module_grants": [
+        "Dean Academic",
+        "admin",
+        "auditor",
+        "dept_approver",
+        "faculty",
+        "host",
+        "reception",
+        "security_admin",
+        "security_guard",
+        "staff",
+        "super_admin",
+        "visitor"
+      ],
+      "permissions": [
+        {
+          "code": "vms.visit_request.view_self",
+          "label": "View one's own visit requests or hosted visits"
+        },
+        {
+          "code": "vms.visit_request.create",
+          "label": "Create or submit visit requests"
+        },
+        {
+          "code": "vms.visit_request.view",
+          "label": "View all visit requests within scope"
+        },
+        {
+          "code": "vms.visit_request.approve_host",
+          "label": "Approve or reject visits hosted by self"
+        },
+        {
+          "code": "vms.visit_request.approve_second_level",
+          "label": "Approve requests needing second-level approval"
+        },
+        {
+          "code": "vms.visit_request.cancel",
+          "label": "Cancel pending visit requests"
+        },
+        {
+          "code": "vms.visit_request.extend",
+          "label": "Request or approve visit duration extensions"
+        },
+        {
+          "code": "vms.pass.view_self",
+          "label": "View digital pass and QR code"
+        },
+        {
+          "code": "vms.pass.scan",
+          "label": "Scan and verify QR passes at gate"
+        },
+        {
+          "code": "vms.pass.issue",
+          "label": "Issue or print physical/digital visitor passes"
+        },
+        {
+          "code": "vms.gate.check_in_out",
+          "label": "Check in and check out visitors at gate"
+        },
+        {
+          "code": "vms.walkin.register",
+          "label": "Register walk-in visitors at gate/reception"
+        },
+        {
+          "code": "vms.override.gate",
+          "label": "Authorize manual gate override on verification failure"
+        },
+        {
+          "code": "vms.blacklist.view",
+          "label": "View blacklist and watchlist entries"
+        },
+        {
+          "code": "vms.blacklist.manage",
+          "label": "Add, edit or deactivate blacklist entries"
+        },
+        {
+          "code": "vms.incident.report",
+          "label": "Flag and report security incidents"
+        },
+        {
+          "code": "vms.zone.view",
+          "label": "View campus zones and current occupancy"
+        },
+        {
+          "code": "vms.zone.manage",
+          "label": "Configure campus zones, restricted flags and capacities"
+        },
+        {
+          "code": "vms.gate.manage",
+          "label": "Configure campus entry/exit gates"
+        },
+        {
+          "code": "vms.policy.manage",
+          "label": "Manage visit policies and system thresholds"
+        },
+        {
+          "code": "vms.emergency.trigger",
+          "label": "Trigger emergency evacuation muster drill"
+        },
+        {
+          "code": "vms.emergency.roll_call",
+          "label": "Perform roll call and mark visitors safe/unaccounted"
+        },
+        {
+          "code": "vms.report.view",
+          "label": "View operational visitor logs and analytics"
+        },
+        {
+          "code": "vms.report.export",
+          "label": "Export visitor and audit data"
+        },
+        {
+          "code": "vms.audit.view",
+          "label": "View immutable audit logs"
+        },
+        {
+          "code": "vms.retention.manage",
+          "label": "Configure retention period and trigger anonymisation"
+        }
+      ],
+      "scope_permissions": [],
+      "system_permissions": [
+        "vms.notification.auto_send",
+        "vms.pass.auto_expire",
+        "vms.retention.auto_anonymize",
+        "vms.visit.auto_overstay"
+      ]
     }
   },
   "version": 1

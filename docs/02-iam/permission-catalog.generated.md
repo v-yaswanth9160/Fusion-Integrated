@@ -38,3 +38,34 @@ For the intended taxonomy of modules not yet built, see
 | `placement_cell.registration.self` | Register yourself for a placement season | `student` |
 | `placement_cell.record.manage` | Record off-campus placements and chase offer letters | `placement_officer` |
 | `placement_cell.academic_directory.view` | Browse every student's declared CPI | `Dean Academic`, `acadadmin`, `placement_chairman`, `placement_coordinator`, `placement_officer` |
+
+## `vms`
+
+| Code | What it allows | Held by |
+|---|---|---|
+| `vms.visit_request.view_self` | View one's own visit requests or hosted visits | `Dean Academic`, `admin`, `dept_approver`, `faculty`, `host`, `staff`, `super_admin`, `visitor` |
+| `vms.visit_request.create` | Create or submit visit requests | `Dean Academic`, `admin`, `dept_approver`, `faculty`, `host`, `staff`, `super_admin`, `visitor` |
+| `vms.visit_request.view` | View all visit requests within scope | `Dean Academic`, `admin`, `dept_approver`, `reception`, `security_admin`, `super_admin` |
+| `vms.visit_request.approve_host` | Approve or reject visits hosted by self | `Dean Academic`, `admin`, `dept_approver`, `faculty`, `host`, `staff`, `super_admin` |
+| `vms.visit_request.approve_second_level` | Approve requests needing second-level approval | `Dean Academic`, `admin`, `dept_approver`, `security_admin`, `super_admin` |
+| `vms.visit_request.cancel` | Cancel pending visit requests | `Dean Academic`, `admin`, `dept_approver`, `faculty`, `host`, `staff`, `super_admin`, `visitor` |
+| `vms.visit_request.extend` | Request or approve visit duration extensions | `Dean Academic`, `admin`, `dept_approver`, `faculty`, `host`, `staff`, `super_admin` |
+| `vms.pass.view_self` | View digital pass and QR code | `Dean Academic`, `admin`, `dept_approver`, `faculty`, `host`, `staff`, `super_admin`, `visitor` |
+| `vms.pass.scan` | Scan and verify QR passes at gate | `admin`, `security_admin`, `security_guard`, `super_admin` |
+| `vms.pass.issue` | Issue or print physical/digital visitor passes | `admin`, `reception`, `security_guard`, `super_admin` |
+| `vms.gate.check_in_out` | Check in and check out visitors at gate | `admin`, `reception`, `security_guard`, `super_admin` |
+| `vms.walkin.register` | Register walk-in visitors at gate/reception | `admin`, `reception`, `super_admin` |
+| `vms.override.gate` | Authorize manual gate override on verification failure | `admin`, `security_admin`, `super_admin` |
+| `vms.blacklist.view` | View blacklist and watchlist entries | `admin`, `auditor`, `security_admin`, `super_admin` |
+| `vms.blacklist.manage` | Add, edit or deactivate blacklist entries | `admin`, `security_admin`, `super_admin` |
+| `vms.incident.report` | Flag and report security incidents | `admin`, `security_admin`, `security_guard`, `super_admin` |
+| `vms.zone.view` | View campus zones and current occupancy | `admin`, `auditor`, `reception`, `security_admin`, `security_guard`, `super_admin` |
+| `vms.zone.manage` | Configure campus zones, restricted flags and capacities | `admin`, `security_admin`, `super_admin` |
+| `vms.gate.manage` | Configure campus entry/exit gates | `admin`, `security_admin`, `super_admin` |
+| `vms.policy.manage` | Manage visit policies and system thresholds | `admin`, `security_admin`, `super_admin` |
+| `vms.emergency.trigger` | Trigger emergency evacuation muster drill | `admin`, `security_admin`, `super_admin` |
+| `vms.emergency.roll_call` | Perform roll call and mark visitors safe/unaccounted | `admin`, `security_admin`, `security_guard`, `super_admin` |
+| `vms.report.view` | View operational visitor logs and analytics | `admin`, `auditor`, `security_admin`, `super_admin` |
+| `vms.report.export` | Export visitor and audit data | `admin`, `auditor`, `security_admin`, `super_admin` |
+| `vms.audit.view` | View immutable audit logs | `admin`, `auditor`, `security_admin`, `super_admin` |
+| `vms.retention.manage` | Configure retention period and trigger anonymisation | `admin`, `super_admin` |
